@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .safe-area-view {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .min-h-touch {
+    min-height: 44px;
+  }
+}
+
+body {
+  @apply font-sans antialiased text-text-dark bg-gray-100;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
